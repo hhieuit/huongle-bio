@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #f4f4f4;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  color: #333333;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+svg {
+  display: block;
+  max-width: 100%;
+}
+.cover {
+  background: url("./images/banner.jpg") no-repeat center;
+  background-size: cover;
+  height: 30vh;
+  overflow: hidden;
+}
+.content {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  width: calc(100% - 40px);
+  max-width: 800px;
+  padding: 2rem;
+  margin: -2rem auto 0;
+}
+.user {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.user__avatar {
+  background: linear-gradient(90deg, #87d4ff 0, #e880fc 100%);
+  padding: 2px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+.user__avatar img {
+  border-radius: 50%;
+}
+.user__info {
+  width: calc(100% - 120px);
+  padding-left: 1rem;
+}
+.user__name {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.user__name svg {
+  margin-left: 0.625rem;
+}
+.user__desc {
+  display: flex;
+  margin-bottom: 5px;
+}
+.user__desc svg {
+  margin-right: 5px;
+  width: 20px;
+  min-width: 20px;
+  height: 20px;
+}
+.social {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
+.social-item {
+  display: block;
+  padding: 2rem 1rem;
+  border: 1px solid #eee;
+  border-radius: 1rem;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000;
+}
+.social-item__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-item__icon img {
+  width: 50px;
+  height: 50px;
+}
+.social-item__name {
+  margin-top: 1.5rem;
+}
+.heading {
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 2rem 0;
+}
+.product {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
+.product-item {
+  text-decoration: none;
+}
+.product-item:first-child {
+  grid-column: 1 / 3;
+}
+.product-item__image {
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.product-item__name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+.copyright {
+  text-align: center;
+  font-size: 0.875rem;
+  padding: 2rem 0 3rem;
+}
+@media screen and (max-width: 500px) {
+  .user {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .user__avatar {
+    margin-bottom: 1rem;
+  }
+  .user__info {
+    width: 100%;
+    padding-left: 0;
+  }
+  .user__desc,
+  .user__name {
+    justify-content: center;
+    text-align: center;
+  }
+}
